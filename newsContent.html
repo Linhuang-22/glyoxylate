@@ -154,7 +154,7 @@
 		$(".pannle h4 a").click(function(e) {
 			var that = $(this).parents(".pannle");
 			console.log($(this).attr('class'))
-			if ($(this).attr('class') == "now") {
+			if (that.children('ul').css('display') == "block") {
 				that.children('ul').slideUp(400);
 			}else{
 				$(this).addClass('now');
