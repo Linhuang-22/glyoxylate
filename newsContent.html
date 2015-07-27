@@ -7,6 +7,7 @@
 	<title>新闻内容页</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/style.css">
 	<!--[if lt IE 9]>
 	    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -41,7 +42,6 @@
 	<section class="title-back title clearfix">
 		<div class="container clearfix">
 			<h2 class="title-text">公司新闻</h2>
-			<div class="title-path">新闻</div>
 		</div>
 	</section>
 
@@ -63,9 +63,9 @@
 				<div class="share clearfix">
 					<span>分享：</span>
 					<ul class="share-list clearfix list-unstyled">
-						<li><a href="#">微博</a></li>
-						<li><a href="#">微信</a></li>
-						<li><a href="#">凌鹰</a></li>
+						<li><a href="#"><span class="icon-weibo"></span></a></li>
+						<li><a href="#"><span class="icon-wechat"></span></a></li>
+						<li><a href="#"><span class="icon-linkedin"></span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -87,6 +87,30 @@
 				</div>
 				<div class="links">
 					<h3 class="row">友情链接</h3>
+					<div class="pannle">
+						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
+						<ul class="list-unstyled">
+							<li><a href="#">臭氧技术中心</a></li>
+							<li><a href="#">压电陶瓷</a></li>
+							<li><a href="#">国林总站</a></li>
+						</ul>
+					</div>
+					<div class="pannle">
+						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
+						<ul class="list-unstyled">
+							<li><a href="#">臭氧技术中心</a></li>
+							<li><a href="#">压电陶瓷</a></li>
+							<li><a href="#">国林总站</a></li>
+						</ul>
+					</div>
+					<div class="pannle">
+						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
+						<ul class="list-unstyled">
+							<li><a href="#">臭氧技术中心</a></li>
+							<li><a href="#">压电陶瓷</a></li>
+							<li><a href="#">国林总站</a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -96,21 +120,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-4 clearfix">
-						<span class="char-icon">1</span>
+						<span class="char-icon"><span class="icon-home2"></span></span>
 						<div class="char-title">
-							<span class="char-title">纯度高达99%</span>
+							<span class="char-title">中国山东省青岛市市北区 瑞昌路168号 266031</span>
 						</div>
 				</div>
 				<div class="col-sm-4 clearfix">
-						<span class="char-icon">2</span>
+						<span class="char-icon"><span class="icon-phone"></span></span>
 						<div class="char-title">
-							<span class="char-title">纯度高达99%</span>
+							<span class="char-title">800-8600-113 400-6532-616</span>
 						</div>
 				</div>
 				<div class="col-sm-4 clearfix">
-						<span class="char-icon">3</span>
+						<span class="char-icon"><span class="icon-mail"></span></span>
 						<div class="char-title">
-							<span class="char-title">纯度高达99%</span>
+							<span class="char-title">guolin@china-guolin.com</span>
 						</div>
 				</div>
 			</div>
@@ -119,12 +143,26 @@
 
 	<footer>
 		<div class="container">
-			<p class="tec">技术支持：大神大神</p>
-			<p class="footer-tell">8008208820</p>
+			<p class="tec">Copyright © 2015 - 网站技术支持<span class="theme-author">诚客奕品</span></p>
+			<p class="footer-tell">首页关于我们隐私政策法律 & 法规客服</p>
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(".pannle h4 a").click(function(e) {
+			var that = $(this).parents(".pannle");
+			console.log($(this).attr('class'))
+			if ($(this).attr('class') == "now") {
+				that.children('ul').slideUp(400);
+			}else{
+				$(this).addClass('now');
+				that.siblings('.pannle').children('ul').slideUp(400);
+				that.children('ul').slideDown('400');
+			};
+			e.preventDefault();
+		});
+	</script>
 </body>
 </html>

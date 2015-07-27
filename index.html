@@ -7,6 +7,9 @@
 	<title>乙醛酸首页</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="icomoon/style.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
 	<!--[if lt IE 9]>
 	    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -38,8 +41,14 @@
 		</div>
 	</nav>
 
-	<section class="container-fulid">
-		<img class="index-banner" src="images/index-banner.jpg">
+	<section class="container-fulid owl-carousel">
+		  <div class="justtry"><img src="images/index-banner.jpg"></div>
+		  <div class="justtry"><img src="images/94.jpg"></div>
+		  <div class="justtry"> Your 3 </div>
+		  <div class="justtry"> Your 4 </div>
+		  <div class="justtry"> Your 5 </div>
+		  <div class="justtry"> Your 6 </div>
+		  <div class="justtry"> Your 7 </div>
 	</section>
 
 	<section class="title-back">
@@ -50,7 +59,7 @@
 			</div>
 			<div class="col-sm-3 input-group send">
 				<input type="email" class="form-control" placeholder="please enter your email" aria-describedby="email">
-				<span class="input-group-addon">发送</span>
+				<span class="input-group-addon"><span class="icon-link-external"></span></span>
 			</div>
 		</div>
 	</section>
@@ -63,7 +72,7 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="col-sm-12 clearfix">
-						<span class="char-icon">1</span>
+						<span class="char-icon"><span class="icon-beaker-alt"></span></span>
 						<span class="char-title">纯度高达99%纯度非常高非常高</span>
 					</div>
 					<div class="col-sm-12">
@@ -72,8 +81,8 @@
 				</div>
 				<div class="col-sm-4">
 					<div class="col-sm-12 clearfix">
-						<span class="char-icon">2</span>
-						<span class="char-title">纯度高达99%</span>
+						<span class="char-icon"><span class="icon-aperture"></span></span>
+						<span class="char-title">无草酸、乙二醇</span>
 					</div>
 					<div class="col-sm-12">
 						<p class="char-text">这里写了很多很多很多产品特色，其实是非常的有特色，不然为什么会写产品特色，真的特色噢,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字</p>
@@ -81,8 +90,8 @@
 				</div>
 				<div class="col-sm-4 clearfix">
 					<div class="col-sm-12">
-						<span class="char-icon">3</span>
-						<span class="char-title">纯度高达99%</span>
+						<span class="char-icon"><span class="icon-squirrel"></span></span>
+						<span class="char-title">安全环保</span>
 					</div>
 					<div class="col-sm-12">
 						<p class="char-text">这里写了很多很多很多产品特色，其实是非常的有特色，不然为什么会写产品特色，真的特色噢,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字</p>
@@ -130,7 +139,33 @@
 	</section>
 
 
-	<section class="green-back">
+	<section class="" style="position:relative">
+		<section class="container-fulid owl-theme" id="backtry">
+			  <div class="item">
+			      <div class="text-center">
+			          <img src="images/20150522_bluebg.png" alt="">
+			          <!-- <div class="testimonial-author">客户名称</div>
+			          <div class="testimonial-job">客户企业</div> -->
+			      </div>
+			      <!-- <div class="textcenter">
+			          <blockquote>
+			              客户评语 Powerful PSD theme, built to suit everybody <br>and any type of website. TREND has everything you need to <br>build an awesome website for you or your company.
+			          </blockquote>
+			      </div> -->
+			  </div>
+			  <div class="item">
+			      <div class="text-center">
+			          <img src="images/trend-image.jpg" alt="">
+			          <!-- <div class="testimonial-author">客户名称</div>
+			          <div class="testimonial-job">客户企业</div> -->
+			      </div>
+			      <!-- <div class="textcenter">
+			          <blockquote>
+			              客户评语 Powerful PSD theme, built to suit everybody <br>and any type of website. TREND has everything you need to <br>build an awesome website for you or your company.
+			          </blockquote>
+			      </div> -->
+			  </div>
+		</section>
 		<div class="container develop">
 			<div class="row">
 				<h2>成长故事</h2>
@@ -162,22 +197,47 @@
 	<section class="contact">
 		<div class="container">
 			<div class="row">
+				<div class="col-sm-5">
+					<div class="input-group">
+						<span class="input-group-addon">联系人</span>
+						<input type="text" class="form-control">
+						
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">邮箱</span>
+						<input type="text" class="form-control">
+						
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon">电话</span>
+						<input type="text" class="form-control">
+						
+					</div>
+				</div>
+				<div class="col-sm-6 col-sm-offset-1">
+					<div class="input-group">
+						<textarea class="form-control" rows="6"></textarea>
+						<span class="input-group-addon submit">提交</span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm-4 clearfix">
-						<span class="char-icon">1</span>
+						<span class="char-icon"><span class="icon-home2"></span></span>
 						<div class="char-title">
-							<span class="char-title">纯度高达99%</span>
+							<span class="char-title">中国山东省青岛市市北区 瑞昌路168号 266031</span>
 						</div>
 				</div>
 				<div class="col-sm-4 clearfix">
-						<span class="char-icon">2</span>
+						<span class="char-icon"><span class="icon-phone"></span></span>
 						<div class="char-title">
-							<span class="char-title">纯度高达99%</span>
+							<span class="char-title">800-8600-113 400-6532-616</span>
 						</div>
 				</div>
 				<div class="col-sm-4 clearfix">
-						<span class="char-icon">3</span>
+						<span class="char-icon"><span class="icon-mail"></span></span>
 						<div class="char-title">
-							<span class="char-title">纯度高达99%</span>
+							<span class="char-title">guolin@china-guolin.com</span>
 						</div>
 				</div>
 			</div>
@@ -186,12 +246,45 @@
 
 	<footer>
 		<div class="container">
-			<p class="tec">技术支持：大神大神</p>
-			<p class="footer-tell">8008208820</p>
+			<p class="tec">Copyright © 2015 - 网站技术支持<span class="theme-author">诚客奕品</span></p>
+			<p class="footer-tell">首页关于我们隐私政策法律 & 法规客服</p>
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  $('.owl-carousel').owlCarousel({
+		  	// items:1,
+		  	// lazyContent:true,
+		  	// autoplay:true,
+		  	// autoplayTimeout:3000,
+		  	// autoplaySpeed:1000,
+		  	// navSpeed:1000,
+		  	// autoplayHoverPause:true,
+		  	// loop:true,
+		  	// dotsEach:true,
+		  	// dotData:true,
+		  	// nav:true,
+		  	// navText:["<",">"],
+		  	// slideBy:true
+		  	navigation      : true,
+		  	items:1
+		  });
+		  $('#backtry').owlCarousel({
+		  	navigation      : false, // Show next and prev buttons
+		  	pagination      : false,
+		  	autoPlay        : 3000,
+		  	slideSpeed      : 700,
+		  	paginationSpeed : 700,
+		  	singleItem      : true,
+		  	autoHeight: true,
+		  	rewindSpeed: 2000,
+		  	stopOnHover: true
+		  });
+		})
+	</script>
 </body>
 </html>
