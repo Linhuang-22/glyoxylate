@@ -5,6 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>新闻内容页</title>
+	<Link Rel="SHORTCUT ICON" href="favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="icomoon/style.css">
@@ -14,7 +15,7 @@
     <![endif]-->
 </head>
 <body>
-	<nav class="nav-bar navbar-default nav-default">
+	<nav class="nav-bar navbar-default">
 		<div class="container">
 			<!-- 导航logo与显隐button -->
 			<div class="navbar-header">
@@ -32,8 +33,8 @@
 					<li><a href="index.html">首页</a></li>
 					<li><a href="product.html">产品</a></li>
 					<li><a href="news.html">新闻</a></li>
-					<li><a href="recruitment.html">招聘</a></li>
-					<li><a href="contact.html">客服</a></li>
+					<li><a href="http://123.57.233.9:8080/GLF/gl/recruitment">招聘</a></li>
+					<li><a href="index.html#contact">联系</a></li>
 				</ul>
 			</div>
 		</div>
@@ -50,7 +51,7 @@
 			<div class="col-sm-9">
 				<h3>二期“臭氧系统设备扩产及应用系统集成项目”建设工作已接近尾声</h3>
 				<p>二期“臭氧系统设备扩产及应用系统集成项目”建设工作已接近尾声 | 2015-07-16 14:39</p>
-				<p class="article-tag">产业基地</p>
+				<p class="article-tag"><span class="glyphicon glyphicon-tag"></span>产业基地</p>
 				<div class="editor">
 					<p>公司于2013年4月开始投资建设的二期“臭氧系统设备扩产及应用系统集成项目”， 占地55500平方米，建筑面积28900平方米。项目完成投入使用后，国林将拥有占地88800平方米、建筑面积54000平方米的产业基地，公司产业调整和升级将逐渐展开。</p>
 					<p>目前二期建设的工程主体装修和桥架安装已基本结束，车间地面铺设平整，管道线路铺设完毕，设备基础已建设完毕，各类生产设备已陆续安装并进行调试，道路施工完成95%，剩余部分预计一周内完成施工，灯具安装和布线缆工作正在如火如荼的进行中。预计六月底将全部完工，7月份逐步开始搬迁。</p>
@@ -58,11 +59,11 @@
 					<p>本工程臭氧系统总发生量为480kg/h，是继国林承担的石家庄桥东污水厂600kg/h臭氧系统后，属世界用于污水处理的第二大臭氧系统。近日该项目臭氧系统采购招标中，国林凭借的巨大技术和业绩优势，与国内外其他臭氧品牌的竞争中一举中标。</p>
 				</div>
 				<p class="article-tag">
-					分类: 首页/公司新闻、行业新闻、最新政策/文章
+					<span class="name"><span class="glyphicon glyphicon-pencil"></span>分类:</span> 首页/公司新闻、行业新闻、最新政策/文章
 				</p>
-				<div class="share clearfix">
+				<div class="share">
 					<span>分享：</span>
-					<ul class="share-list clearfix list-unstyled">
+					<ul class="list-unstyled share-list clearfix">
 						<li><a href="#"><span class="icon-weibo"></span></a></li>
 						<li><a href="#"><span class="icon-wechat"></span></a></li>
 						<li><a href="#"><span class="icon-linkedin"></span></a></li>
@@ -73,14 +74,14 @@
 				<div class="hot-news">
 					<h3 class="row">热点资讯</h3>
 					<div class="row clearfix">
-						<img class="news-img" src="images/news.jpg">
-						<h4 class="news-title">新闻标题</h4>
+						<a href=""><img class="news-img" src="images/news.jpg"></a>
+						<a href=""><h4 class="news-title">新闻标题</h4></a>
 						<p class="news-time">20213</p>
 						<p class="news-text">接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试</p>
 					</div>
 					<div class="row clearfix">
-						<img class="news-img" src="images/news.jpg">
-						<h4 class="news-title">新闻标题</h4>
+						<a href=""><img class="news-img" src="images/news.jpg"></a>
+						<a href=""><h4 class="news-title">新闻标题</h4></a>
 						<p class="news-time">20213</p>
 						<p class="news-text">接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试</p>
 					</div>
@@ -89,7 +90,7 @@
 					<h3 class="row">友情链接</h3>
 					<div class="pannle">
 						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
-						<ul class="list-unstyled">
+						<ul class="list-unstyled" style="display:block">
 							<li><a href="#">臭氧技术中心</a></li>
 							<li><a href="#">压电陶瓷</a></li>
 							<li><a href="#">国林总站</a></li>
@@ -116,9 +117,14 @@
 		</div>
 	</section>
 
-	<section class="contact">
+	<section id="cd-google-map">
+	    <div id="google-container" style="border:#ccc solid 1px;"></div>
+	    <!-- <div id="cd-zoom-in"></div>
+	    <div id="cd-zoom-out"></div> -->
+	</section>
+	<section class="contact" id="contact">
 		<div class="container">
-			<div class="row">
+			<div class="row icon-send">
 				<div class="col-sm-4 clearfix">
 						<span class="char-icon"><span class="icon-home2"></span></span>
 						<div class="char-title">
@@ -144,12 +150,24 @@
 	<footer>
 		<div class="container">
 			<p class="tec">Copyright © 2015 - 网站技术支持<span class="theme-author">诚客奕品</span></p>
-			<p class="footer-tell">首页关于我们隐私政策法律 & 法规客服</p>
+			<!-- <p class="footer-tell">首页关于我们隐私政策法律 & 法规客服</p> -->
+			<div class=" footer-tell">
+				<span class="theme-author">分享本站：</span>
+				<ul class="list-unstyled clearfix index-share">
+					<li><a href="#"><span class="icon-weibo"></span></a></li>
+					<li><a href="#"><span class="icon-wechat"></span></a></li>
+					<li><a href="#"><span class="icon-linkedin"></span></a></li>
+				</ul>
+			</div>
 		</div>
 	</footer>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- 	///////// -->
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.4&services=true"></script>
+	<script type="text/javascript" src="js/creatMap.js"></script>
+	<script type="text/javascript">
 	<script type="text/javascript">
 		$(".pannle h4 a").click(function(e) {
 			var that = $(this).parents(".pannle");

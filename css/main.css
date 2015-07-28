@@ -9,26 +9,41 @@ body{
 	text-align: center;
 }
 nav{
-	position: fixed;
+	/*position: fixed;
 	top: 0;
-	left: 0;
+	left: 0;*/
 	width: 100%;
 	z-index: 99999;
 	height: 80px;
 
 }
-.nav-default{
+.nav.navbar-nav{
+	background: #63B8BD;
+}
+.navbar-nav{
+	margin-top: 1px;
+	box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+}
+/*.nav-default{
 	background-color: #63B8BD !important;
 }
+*/
+@media (min-width: 768px){
+	.navbar-nav{
+		box-shadow:none;	
+	}
 
+}
+.navbar-toggle{
+	margin-top: 23px;
+}
 .green-back{
 	background-color: #63B8BD;
 	position: relative;
 	color: #fff;
 }
 .navbar-default{
-	background-color: #63B8BD;
-	background-color: rgba(0,0,0,.7);
+	background-color: #4CB8BE;
 } 
 .navbar-brand{
 	color: #fff;
@@ -36,6 +51,7 @@ nav{
 	font-weight: bold;
 	height: 80px;
 	line-height: 50px;
+	text-transform: uppercase;
 }
 .navbar-nav>li>a{
 	color: #fff !important;
@@ -53,7 +69,7 @@ nav{
 	color: #fff;
 }
 .title{
-	margin: 82px 0 30px;
+	margin: 0px 0 30px;
 	line-height: 70px;
 	color: #333;
 }
@@ -66,6 +82,8 @@ nav{
 .title-path{
 	float: right;
 	margin-right: 15px;
+	margin-top: 20px;
+	width: 150px;
 }
 .index-banner{
 	width: 100%;
@@ -160,7 +178,8 @@ h2{
 }
 .product{
 	text-align: center;
-	padding: 50px 0 30px; 
+	padding-top: 50px;
+	padding-bottom: 30px;
 }
 .product .char-title{
 	font-size: 22px;
@@ -224,7 +243,8 @@ h2{
 	color: rgb(154, 167, 175);
 }
 .develop{
-	padding:190px 0 36px 0;
+	padding-top: 190px;
+	padding-bottom: 36px;
 	margin-top: -190px;
 }
 .develop:before{
@@ -238,9 +258,15 @@ h2{
 	width: 100%;
 }
 .develop .introduction{
-	color: #333;
+	background: #111;
+	background: rgba(0,0,0,.9);
+	color: #fff;
+	padding:15px 20px;
+	border-radius: 2px;
+	letter-spacing: .3em;
 }
 .story{
+	margin: 30px 0 0px;
 	background: #333;
 	background: rgba(0,0,0,.7);
 	color: #f2f2f2;
@@ -259,8 +285,11 @@ h2{
 
 .contact{
 	background: #2f3237;
-	padding: 36px 0;
+	padding: 36px 0 0px;
 	color: #fff;
+}
+.contact .icon-send{
+	margin-bottom: 20px;
 }
 .contact .input-group{
 	margin-bottom: 16px;
@@ -270,12 +299,16 @@ h2{
 	border-color: #63B8BD;
 	color: #63B8BD;
 }
+.contact .input-group .submit{
+	color: #333;
+	background: #63B8BD;
+}
 .contact .char-title{
 	vertical-align: middle;
 }
-.contact .input-group .submit{
-	background: #63B8BD;
-	color: #2F3237;
+.contact .input-group .glyphicon-send{
+	background: #63B8BD !important;
+	color: #2F3237 !important;
 }
 .contact .char-icon{
 	width: 46px;
@@ -306,8 +339,11 @@ footer{
 }
 .footer-tell{
 	float: right;
-	margin: 0;
+	margin: 0px;
 	color: #979a9f;
+}
+.footer-tell a{
+	color: #00adf1 !important;
 }
 
 .news-content p{
@@ -327,19 +363,85 @@ footer{
 	overflow: hidden;
 	padding: 10px 0;
 }
-.share span{
+.article-tag .glyphicon{
+	margin-right: 5px;
+	font-size: 14px;
+}
+.name{
+	font-size: 16px;
+	color: rgb(51,51,51);
+}
+.share>span{
 	float: left;
+	font-size: 24px;
+	color: #333;
 }
 .share-list{
 	float: left;
-	margin-left: 20px;
+	margin-left: 15px;
 }
-.share-list li{
+.index-share{
+	display: inline-block;
+	margin-bottom: 0;
+	line-height: 0;
+}
+.index-share li{
 	float: left;
 }
-.share-list li a{
-	padding: 5px 10px;
+.index-share li a{
+	padding: 0px 10px;
+	color:#3b5e60;
 }
+
+.share-list li:hover a {
+    color: #fff;
+}
+.share-list li a {
+    color: #6d7a83;
+    display: block;
+    text-decoration: none;
+    transition: all 300ms;
+    -o-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+}
+.share-list > li {
+    background: none repeat scroll 0 0 #d7dbdd;
+    display: block;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 7px;
+    text-align: center;
+    width: 34px;
+
+    color: rgb(255, 255, 255);
+    height: auto;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+
+
+    transition: all 300ms;
+    -o-transition: all 300ms;
+    -ms-transition: all 300ms;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+}
+.share {
+    margin-top: 30px;
+}
+.share-list > li:hover{
+    background-color: #00ADF1;
+}
+
 
 .product-info{
 	margin: 30px -15px;
@@ -356,7 +458,17 @@ footer{
 	text-indent: 2em;
 }
 
+
 @media only screen and (max-width: 768px){
+	body{
+		padding-top: 80px;
+	}
+	nav{
+		position: fixed;
+		top: 0;
+		left: 0;
+		box-shadow: 0px 2px 3px rgba(0,0,0,.3)
+	}
 	.news-img{
 		width: 50%;
 		float: left;
@@ -396,6 +508,15 @@ footer{
 	}
 	.news .col-sm-4{
 		margin-top: 10px;
+	}
+	.story{
+		margin: 1px 0 0 0;
+	}
+	#backtry{
+		background-color: #63B8BD;
+	}
+	.owl-wrapper{
+		display: none !important;
 	}
 
 }
@@ -477,23 +598,25 @@ footer{
 	position: absolute;
 	left: 20px;
 	top: 50%;
-	font-size: 60px;
-	margin-top: -30px;
+	font-size: 60px !important;
+	margin-top: -30px !important;
 	color: #fff;
 	font-family: "宋体";
-	background: rgba(0,0,0,.3);
+	background: rgba(0,0,0,.3) !important;
 	padding: 5px 10px;
+	border-radius: 5px !important;
 }
 .owl-next{
 	position: absolute;
 	right:20px;
 	top: 50%;
-	font-size: 60px;
-	margin-top: -30px;
+	font-size: 60px !important;
+	margin-top: -30px !important;
 	color: #fff;
 	font-family: "宋体";
-	background: rgba(0,0,0,.3);
-	padding: 5px 10px;
+	background: rgba(0,0,0,.3) !important;
+	padding: 5px 10px !important;
+	border-radius: 5px !important;
 }
 #backtry{
 	position: absolute;
@@ -501,11 +624,11 @@ footer{
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 692px;
+	height: 100%;
 	overflow: hidden;
 }
 #backtry img{
-	min-height: 692px;
+	min-height: 882px;
 }
 
 .owl-carousel .owl-pagination{
@@ -545,4 +668,48 @@ footer{
 }
 .pannle ul li{
 	margin-top: 5px;
+}
+
+
+#trend_on_the_map {
+    height: 430px;
+}
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e7eaf0;
+}
+@media only screen and (min-width: 768px) {
+  #google-container {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  #google-container {
+    height: 400px;
+  }
+}
+
+#cd-google-map {
+  position: relative;
+  overflow: hidden;
+}
+#cd-google-map address {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1em;
+  background-color: rgba(211, 104, 104, 0.9);
+  color: white;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+@media only screen and (min-width: 768px) {
+  #cd-google-map address {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
 }
