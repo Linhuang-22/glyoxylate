@@ -253,7 +253,7 @@ h2{
 	background: url(../images/white_bottom.png) no-repeat 50% 0%;
 	height: 195px;
 	position: absolute;
-	top: 0px;
+	top: -5px;
 	left: 0;
 	z-index: 0;
 	width: 100%;
@@ -516,7 +516,7 @@ footer{
 	#backtry{
 		background-color: #63B8BD;
 	}
-	/*.owl-wrapper{
+	/*#backtry .owl-wrapper{
 		display: none !important;
 	}*/
 
@@ -586,7 +586,8 @@ footer{
 }
 
 .owl-carousel img{
-	width: 100%;
+	min-height: 100%;
+	min-width: 100%;
 }
 
 .owl-carousel .justtry{
