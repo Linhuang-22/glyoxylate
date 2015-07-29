@@ -89,15 +89,19 @@
 				<div class="links">
 					<h3 class="row">友情链接</h3>
 					<div class="pannle">
-						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
-						<ul class="list-unstyled" style="display:block">
-							<li><a href="#">臭氧技术中心</a></li>
-							<li><a href="#">压电陶瓷</a></li>
-							<li><a href="#">国林总站</a></li>
+						<h4><a href="">政府部门<span class="glyphicon glyphicon-plus"></span></a></h4>
+						<ul class="list-unstyled">
+							<li><a href="#">相关部门</a></li>
 						</ul>
 					</div>
 					<div class="pannle">
-						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
+						<h4><a href="">合作伙伴/其他<span class="glyphicon glyphicon-plus"></span></a></h4>
+						<ul class="list-unstyled">
+							<li><a href="#">合作伙伴</a></li>
+						</ul>
+					</div>
+					<div class="pannle">
+						<h4><a href="">直属部门/兄弟公司<span class="glyphicon glyphicon-plus"></span></a></h4>
 						<ul class="list-unstyled">
 							<li><a href="#">臭氧技术中心</a></li>
 							<li><a href="#">压电陶瓷</a></li>
@@ -105,11 +109,9 @@
 						</ul>
 					</div>
 					<div class="pannle">
-						<h4><a href="">直属部门/兄弟公司</a><span class="icon-minus-alt"></span></h4>
+						<h4><a href="">行业协会<span class="glyphicon glyphicon-plus"></span></a></h4>
 						<ul class="list-unstyled">
-							<li><a href="#">臭氧技术中心</a></li>
-							<li><a href="#">压电陶瓷</a></li>
-							<li><a href="#">国林总站</a></li>
+							<li><a href="#">行业协会</a></li>
 						</ul>
 					</div>
 				</div>
@@ -168,16 +170,18 @@
 	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.4&services=true"></script>
 	<script type="text/javascript" src="js/creatMap.js"></script>
 	<script type="text/javascript">
-	<script type="text/javascript">
 		$(".pannle h4 a").click(function(e) {
 			var that = $(this).parents(".pannle");
 			console.log($(this).attr('class'))
 			if (that.children('ul').css('display') == "block") {
 				that.children('ul').slideUp(400);
+				$(this).children('span').removeClass('glyphicon-minus');
 			}else{
+				that.siblings('.pannle').find('span').removeClass('glyphicon-minus');
 				$(this).addClass('now');
 				that.siblings('.pannle').children('ul').slideUp(400);
 				that.children('ul').slideDown('400');
+				$(this).children('span').addClass('glyphicon-minus');
 			};
 			e.preventDefault();
 		});

@@ -30,7 +30,8 @@ nav{
 */
 @media (min-width: 768px){
 	.navbar-nav{
-		box-shadow:none;	
+		box-shadow:none;
+		margin-top: 0;	
 	}
 
 }
@@ -515,9 +516,9 @@ footer{
 	#backtry{
 		background-color: #63B8BD;
 	}
-	.owl-wrapper{
+	/*.owl-wrapper{
 		display: none !important;
-	}
+	}*/
 
 }
 @media(min-width:2050px){
