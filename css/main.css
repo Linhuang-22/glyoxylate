@@ -154,6 +154,7 @@ h2{
 /*	color:#63B8BD;*/
 
 }
+
 .product .char-icon{
 	background-color: #EBEBEB;
 	color: #282D33;
@@ -169,6 +170,9 @@ h2{
 	vertical-align: top;
 	font-size: 28px;
 	line-height: 30px;
+}
+.product-char .char-title{
+	line-height: 80px;
 }
 .char-text{
 	margin-top: 22px;
@@ -516,9 +520,9 @@ footer{
 	#backtry{
 		background-color: #63B8BD;
 	}
-	/*#backtry .owl-wrapper{
+	#backtry .owl-wrapper{
 		display: none !important;
-	}*/
+	}
 
 }
 @media(min-width:2050px){
@@ -655,8 +659,8 @@ footer{
 	color: #333;
 }
 .pannle h4 a{
+	display: block;
 	color: #333;
-
 }
 .pannle h4 span{
 	float: right;
