@@ -21,8 +21,8 @@ nav{
 	background: #63B8BD;
 }
 .navbar-nav{
-	margin-top: 1px;
-	box-shadow: 0px 2px 3px rgba(0,0,0,.3);
+	margin-top: 0px;
+/*	box-shadow: 0px 2px 3px rgba(0,0,0,.3);*/
 }
 /*.nav-default{
 	background-color: #63B8BD !important;
@@ -84,7 +84,9 @@ nav{
 	float: right;
 	margin-right: 15px;
 	margin-top: 20px;
-	width: 150px;
+	width: 40%;
+	min-width: 150px;
+	max-width: 300px;
 }
 .index-banner{
 	width: 100%;
@@ -154,7 +156,15 @@ h2{
 /*	color:#63B8BD;*/
 
 }
-
+.glyphicon-tint{
+	color: #0ad;
+}
+.glyphicon-fire{
+	color: #E66A33;
+}
+.glyphicon-leaf{
+	color: #09CC37;
+}
 .product .char-icon{
 	background-color: #EBEBEB;
 	color: #282D33;
@@ -347,9 +357,9 @@ footer{
 	margin: 0px;
 	color: #979a9f;
 }
-.footer-tell a{
+/*.footer-tell a{
 	color: #00adf1 !important;
-}
+}*/
 
 .news-content p{
 	color: rgb(153, 171, 183);
@@ -395,9 +405,20 @@ footer{
 }
 .index-share li a{
 	padding: 0px 10px;
-	color:#3b5e60;
+	color:#63B8BD;
 }
-
+.index-share a:hover{
+	text-decoration: none;
+}
+.index-share a:hover .icon-weibo{
+	color: #ED0000;
+}
+.index-share a:hover .icon-linkedin{
+	color: #006A9A;	
+}
+.index-share a:hover .icon-wechat{
+	color: #05E602;
+}
 .share-list li:hover a {
     color: #fff;
 }
@@ -468,11 +489,14 @@ footer{
 	body{
 		padding-top: 80px;
 	}
+	.navbar-collapse{
+		border-top: none;
+	}
 	nav{
 		position: fixed;
 		top: 0;
 		left: 0;
-		box-shadow: 0px 2px 3px rgba(0,0,0,.3)
+		/*box-shadow: 0px 2px 3px rgba(0,0,0,.3)*/
 	}
 	.news-img{
 		width: 50%;
@@ -584,7 +608,7 @@ footer{
     -ms-transform: translateX(0px);
 }
 .theme-author{
-	color: #00adf1;
+	color: #63B8BD;
 	font-weight: bold;
 	margin-left: 10px;
 }
