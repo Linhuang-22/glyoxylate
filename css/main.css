@@ -44,7 +44,7 @@ nav{
 	color: #fff;
 }
 .navbar-default{
-	background-color: #4CB8BE;
+	background-color: #63B8BD;
 } 
 .navbar-brand{
 	color: #fff;
@@ -468,24 +468,42 @@ footer{
     background-color: #00ADF1;
 }
 
+.product-background{
+	background: url(../images/trend-image.jpg) 50% 50% fixed no-repeat;
+	background-size: cover;
+	min-height: 580px;
+}
+.product-background .product .char-text,
+.product-background .char-title{
+/*	background: rgba(0,0,0,.7);*/
+	color: #fff !important;
+}
 
 .product-info{
 	margin: 30px -15px;
 }
 .product-summer{
-	padding: 30px;
+	padding-top: 30px;
 }
 .product-summer h2{
-	margin: 0 0 0 20px;
+	margin: 0 0 20px 0px;
+	color: #111;
 }
 .product-summer p{
 	margin-top: 10px;
 	line-height: 1.5em;
 	text-indent: 2em;
 }
-
-
-@media only screen and (max-width: 768px){
+.product-background .row{
+	margin-top: 80px;
+}
+@media only screen and (max-width: 767px){
+	.product-background .row{
+		margin-top: 0;
+	}
+	.char-text{
+		margin:10px 0 30px 0px;
+	}
 	body{
 		padding-top: 80px;
 	}
@@ -546,6 +564,9 @@ footer{
 	}
 	#backtry .owl-wrapper{
 		display: none !important;
+	}
+	.product-summer p{
+		font-size: 14px;
 	}
 
 }
