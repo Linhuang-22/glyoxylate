@@ -11,6 +11,19 @@
 	<link rel="stylesheet" type="text/css" href="icomoon/style.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.theme.css">
+	<style type="text/css">
+		#qrcodeCanvas{
+			padding: 10px;
+			background: #fff;
+			border: solid 1px #f2f2f2;
+			border-radius: 4px;
+			position: absolute;
+			z-index: 999;
+			top: -178px;
+			left: -80px;
+			display: none;
+		}
+	</style>
 	<!--[if lt IE 9]>
 	    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -246,17 +259,43 @@
 			<div class=" footer-tell">
 				<span>分享本站：</span>
 				<ul class="list-unstyled clearfix index-share">
-					<li><a href="#"><span class="icon-weibo"></span></a></li>
-					<li><a href="#"><span class="icon-wechat"></span></a></li>
+					<li><a href="javascript:"><span class="icon-weibo"></span></a></li>
+					<li style="position:relative">
+						<a href="javascript:"><span class="icon-wechat"></span></a>
+						<div id="qrcodeCanvas"></div>
+					</li>
+					<!-- <li><a href="javascript:" data-toggle="modal" data-target="#myModal"><span class="icon-wechat"></span></a></li> -->
 					<li><a href="#"><span class="icon-linkedin"></span></a></li>
 				</ul>
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"  style="width:auto">
+      <!-- <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body"  id="qrcodeCanvas">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+<div id="dd22"></div>
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.qrcode.js"></script>
+	<script type="text/javascript" src="js/qrcode.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 <!-- 	///////// -->
 	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.4&services=true"></script>
 	<script type="text/javascript" src="js/creatMap.js"></script>
@@ -296,6 +335,62 @@
 		  	stopOnHover: true
 		  });
 		})
+	</script>
+	<script type="text/javascript">
+		// function shareTSina(title,rLink,site,pic) {  
+		// 		var top = window.screen.height / 2 - 250;  
+		// 		var left = window.screen.width / 2 - 300;
+		//     title = "标题。";  
+		//   // pic = $(".p-img img").attr("src");  
+		//    rLink = "http://www.abc.com/heeh.html";  
+		     
+		//     window.open("http://service.weibo.com/share/share.php?pic=" +encodeURIComponent(pic) +"&title=" +   
+		//     encodeURIComponent(title.replace(/&nbsp;/g, " ").replace(/<br \/>/g, " "))+ "&url=" + encodeURIComponent(rLink),  
+		//     "分享至新浪微博",  
+		//     "height=500,width=600,top=" + top + ",left=" + left + ",toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no");  
+		      
+		// } 
+		// console.log($("img").attr('src'));
+
+		// !function() {
+  //           var sUserAgent = navigator.userAgent.toLowerCase();
+  //           var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+  //           var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+  //           var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+  //           var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+  //           var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+  //           var bIsAndroid = sUserAgent.match(/android/i) == "android";
+  //           var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+  //           var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+  //           // document.writeln("您的浏览设备为：");
+  //           if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+  //                $('#qrcodeCanvas').css('top', '-30px').html("请复制网址到微信朋友圈");
+  //           } else {
+  //           	if (navigator.userAgent.indexOf('Trident') > -1) {
+  //           		$('#qrcodeCanvas').qrcode({  //table
+  //           			render	: "table",
+  //           			text	: "http://baidu.com",
+  //           			width:150,
+  //           			height:150
+  //           		});	
+  //           	}else{
+  //           		$('#qrcodeCanvas').qrcode({   //canvas
+  //           			text	: "http://baidu.com",
+  //           			width:150,
+  //           			height:150
+  //           		});
+  //           	};         
+  //           }
+  //       }()	
+        // browserRedirect(); 
+		
+			
+		$("footer .icon-wechat").click(function(e) {
+			$("#qrcodeCanvas").fadeToggle(400);
+		});
+		$("[data-toggle='popover']").popover({html : true });
+		$("[data-toggle='popover']").popover('show');
+		$("[data-toggle='popover']").popover('hide');
 	</script>
 </body>
 </html>
