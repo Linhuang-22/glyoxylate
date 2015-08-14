@@ -32,7 +32,10 @@ $(".request .icon-weibo").click(function(e) {
     var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
     // document.writeln("您的浏览设备为：");
     if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-         $('#qrcodeCanvas').css('top', '-30px').html("请复制网址到微信朋友圈");
+         $('#qrcodeCanvas').parent('li').attr({
+             'data-toggle': 'modal',
+             'data-target': '#myModal'
+         });
     } else {
     	if (navigator.userAgent.indexOf('Trident') > -1) {
     		$('#qrcodeCanvas').qrcode({  //table
@@ -41,6 +44,7 @@ $(".request .icon-weibo").click(function(e) {
     			width:150,
     			height:150
     		});	
+            console.log("asdas")
     	}else{
     		$('#qrcodeCanvas').qrcode({   //canvas
     			text	: "http://baidu.com",
@@ -50,4 +54,11 @@ $(".request .icon-weibo").click(function(e) {
     	};         
     }
 }()	
-// browserRedirect(); 
+// browserRedirect();
+
+$("footer .icon-wechat").click(function(e) {
+    if ($(this).parents("li").attr('data-toggle') != "modal") {
+        $("#qrcodeCanvas").fadeToggle(400);
+    };
+
+}); 

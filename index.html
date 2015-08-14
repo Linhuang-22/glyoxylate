@@ -119,7 +119,7 @@
 
 
 	<section class="read-more after">
-		<a href="">read more</a>
+		<a href="product.html">read more</a>
 	</section>
 
 	<section style="position:relative;">
@@ -130,20 +130,20 @@
 			</div>
 			<div class="row">
 				<div class="col-sm-4 clearfix">
-					<img class="news-img" src="images/news.jpg">
-					<h4 class="news-title">新闻标题</h4>
+					<a href="newsContent.html"><img class="news-img" src="images/news.jpg"></a>
+					<a href="newsContent.html"><h4 class="news-title">新闻标题</h4></a>
 					<p class="news-time">20213</p>
 					<p class="news-text">接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试</p>
 				</div>
 				<div class="col-sm-4 clearfix">
-					<img class="news-img" src="images/news.jpg">
-					<h4 class="news-title">新闻标题</h4>
+					<a href="newsContent.html"><img class="news-img" src="images/news.jpg"></a>
+					<a href="newsContent.html"><h4 class="news-title">新闻标题</h4></a>
 					<p class="news-time">20213</p>
 					<p class="news-text">接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试</p>
 				</div>
 				<div class="col-sm-4 clearfix">
-					<img class="news-img" src="images/news.jpg">
-					<h4 class="news-title">新闻标题</h4>
+					<a href="newsContent.html"><img class="news-img" src="images/news.jpg"></a>
+					<a href="newsContent.html"><h4 class="news-title">新闻标题</h4></a>
 					<p class="news-time">20213</p>
 					<p class="news-text">接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是测试文字,接下来是文字,接下来是测试文字,接下来是测试</p>
 				</div>
@@ -153,7 +153,7 @@
 	
 
 	<section class="read-more before">
-		<a href="">read more</a>
+		<a href="news.html">read more</a>
 	</section>
 
 
@@ -272,18 +272,18 @@
 	</footer>
 	<!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog" role="document" style="margin-top:250px;">
     <div class="modal-content"  style="width:auto">
-      <!-- <div class="modal-header">
+      <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">分享方法</h4>
       </div>
-      <div class="modal-body"  id="qrcodeCanvas">
+      <div class="modal-body">
+      	<p>请复制网址到微信朋友圈</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div> -->
+      </div>
     </div>
   </div>
 </div>
@@ -385,12 +385,10 @@
         // browserRedirect(); 
 		
 			
-		$("footer .icon-wechat").click(function(e) {
-			$("#qrcodeCanvas").fadeToggle(400);
-		});
-		$("[data-toggle='popover']").popover({html : true });
-		$("[data-toggle='popover']").popover('show');
-		$("[data-toggle='popover']").popover('hide');
+		
+		// $("[data-toggle='popover']").popover({html : true });
+		// $("[data-toggle='popover']").popover('show');
+		// $("[data-toggle='popover']").popover('hide');
 	</script>
 </body>
 </html>
