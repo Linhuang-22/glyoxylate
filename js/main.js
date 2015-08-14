@@ -11,7 +11,6 @@ function shareTSina(title,rLink,site,pic) {
     encodeURIComponent(title.replace(/&nbsp;/g, " ").replace(/<br \/>/g, " "))+ "&url=" + encodeURIComponent(rLink),  
     "分享至新浪微博",  
     "height=500,width=600,top=" + top + ",left=" + left + ",toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no");  
-      
 } 
 $("footer .icon-weibo").click(function(e) {
 	shareTSina("欢迎访问乙醛酸分公司网站","http://123.57.24.32:8080/GLF/gl/index","3842512498",$("img").attr('src'))
