@@ -425,7 +425,7 @@ footer{
 .share-list li:hover a {
     color: #fff;
 }
-.share-list li a {
+.share-list li a,.rotate45 {
     color: #6d7a83;
     display: block;
     text-decoration: none;
@@ -440,7 +440,7 @@ footer{
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
 }
-.share-list > li {
+.share-list > li,.rotate135 {
     background: none repeat scroll 0 0 #d7dbdd;
     display: block;
     float: left;
@@ -782,13 +782,57 @@ footer{
     color: #fff;
 }
 #qrcodeCanvas{
-	padding: 10px;
-	background: #fff;
-	border: solid 1px #f2f2f2;
-	border-radius: 4px;
+    padding: 10px;
+    background: #fff;
+    border: solid 1px #f2f2f2;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 999;
+    bottom: -178px;
+    left: -80px;
+    display: none;
+}
+.input-group-addon{
+	position: relative;
+}
+.request-submit{
 	position: absolute;
-	z-index: 999;
-	top: -178px;
-	left: -80px;
-	display: none;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	opacity: 0;
+	top: 0;
+	left: 0;
+}
+.glyphicon-menu-left,.glyphicon-menu-right{
+	width: 20px;
+	line-height: 20px;	
+	text-align: center;
+}
+.rotate135{
+	background-color: #fff;
+	background-color: transparent;
+	border: solid 1px rgb(185, 184, 184);
+}
+.pull-right.change-page .rotate135{
+	margin-left: 15px;
+}
+.change-page{
+	margin-top: 10px;
+	line-height: 36px;
+	color: rgb(185, 184, 184);
+}
+.change-page:hover a{
+	color: #63B8BD;
+	text-decoration: none;
+}
+.change-page:hover .glyphicon{
+	color: #fff;
+}
+.change-page:hover{
+	color: #63B8BD;
+	text-decoration: none;
+}
+.change-page:hover .rotate135{
+	background-color: #63B8BD;
 }

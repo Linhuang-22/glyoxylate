@@ -70,6 +70,21 @@
 						<li><a href="#"><span class="icon-linkedin"></span></a></li>
 					</ul>
 				</div>
+				<div class="clearfix">
+					<a class="pull-left change-page" href="">
+						<div class="rotate135 clearfix">
+							<span class="glyphicon glyphicon-menu-left rotate45"></span>
+						</div>
+						前页
+					</a>
+					<a class="pull-right change-page" href="">
+						后页
+						<div class="rotate135 clearfix pull-right">
+							<span class="glyphicon glyphicon-menu-right rotate45"></span>
+						</div>
+						
+					</a>
+				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="hot-news">
@@ -164,9 +179,34 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="js/main.js"></script>
+	<div class="modal fade" id="weixinModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document" style="margin-top:250px;">
+	    <div class="modal-content"  style="width:auto">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">微信分享指导</h4>
+	      </div>
+	      <div class="modal-body">
+	      	<ol>
+	            <li>找到浏览器地址栏</li>
+	            <li>在浏览器地址栏中复制链接</li>
+	            <li>打开微信</li>
+	            <li>在朋友圈或对话中黏贴链接并发送</li>
+	        </ol>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<div id="qrcodeCanvas"></div>
+
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.qrcode.js"></script>
+	<script type="text/javascript" src="js/qrcode.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 	<!-- 	///////// -->
 	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.4&services=true"></script>
 	<script type="text/javascript" src="js/creatMap.js"></script>

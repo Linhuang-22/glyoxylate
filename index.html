@@ -63,7 +63,10 @@
 			</div>
 			<div class="col-sm-4 input-group send">
 				<input type="email" class="form-control" placeholder="请输入您的邮件地址" aria-describedby="email">
-				<span class="input-group-addon"><span class="glyphicon glyphicon-share-alt"></span></span>
+				<span class="input-group-addon">
+					<span class="glyphicon glyphicon-share-alt"></span>
+					<input class="request-submit" type="submit">
+				</span>
 			</div>
 		</div>
 	</section>
@@ -234,7 +237,10 @@
 				<div class="col-sm-6 col-sm-offset-1">
 					<div class="input-group">
 						<textarea class="form-control" rows="6"></textarea>
-						<span class="input-group-addon submit"><span class="glyphicon glyphicon-send"></span></span>
+						<span class="input-group-addon submit">
+							<span class="glyphicon glyphicon-send"></span>
+							<input class="request-submit" type="submit">
+						</span>
 					</div>
 				</div>
 			</div>
@@ -245,12 +251,11 @@
 			<p class="tec">Copyright © 2015 - 网站技术支持<span class="theme-author">诚客奕品</span></p>
 			<!-- <p class="footer-tell">首页关于我们隐私政策法律 & 法规客服</p> -->
 			<div class=" footer-tell">
-				<span>分享本站：</span>
+				<span>关注本站：</span>
 				<ul class="list-unstyled clearfix index-share">
 					<li><a href="javascript:"><span class="icon-weibo"></span></a></li>
 					<li style="position:relative">
 						<a href="javascript:"><span class="icon-wechat"></span></a>
-						<div id="qrcodeCanvas"></div>
 					</li>
 					<!-- <li><a href="javascript:" data-toggle="modal" data-target="#myModal"><span class="icon-wechat"></span></a></li> -->
 					<li><a href="#"><span class="icon-linkedin"></span></a></li>
@@ -259,23 +264,24 @@
 		</div>
 	</footer>
 	<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document" style="margin-top:250px;">
-    <div class="modal-content"  style="width:auto">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">分享方法</h4>
-      </div>
-      <div class="modal-body">
-      	<p>请复制网址到微信朋友圈</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+ <div class="modal fade" id="guanzhuweixin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document" style="margin-top:250px;">
+        <div class="modal-content"  style="width:auto">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">扫一扫</h4>
+          </div>
+          <div class="modal-body" style="text-align:center">
+            <img src='images/weichat-qocde.jpg'>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-<div id="dd22"></div>
+	
 	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
 
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
