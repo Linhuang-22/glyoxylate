@@ -2,7 +2,7 @@
 /*CSS Document*/
 
 body{
-	font-family: "微软雅黑";
+	font-family: Georgia, "Times New Roman", "Microsoft YaHei", "微软雅黑", STXihei, "华文细黑", serif;
 }
 
 .pagination-father{
@@ -235,7 +235,7 @@ h2{
 	margin: 25px 0 0 0 ;
 /*	line-height: 1.5em;*/
 	color: #333;
-	font-weight: bold;
+	/*font-weight: bold;*/
 }
 .hot-news .news-title{
 	margin-top: 10px;
@@ -253,7 +253,10 @@ h2{
 }
 .news-text{
 	font-size: 14px;
-	color: #2f3237;
+	color: #666 ;
+}
+.news-content .news-text{
+	font-weight: 300;
 }
 .introduction{
 	text-align: center;
@@ -367,8 +370,10 @@ footer{
 .news-content p{
 	color: rgb(153, 171, 183);
 }
-.editor p{
+.news-content .editor p{
 	text-indent: 2em;
+	color: #333;
+	font-weight: 300;
 }
 .editor img{
 	max-width: 100%;

@@ -74,14 +74,14 @@ $(function () {
     	if (navigator.userAgent.indexOf('Trident') > -1) {
     		$('#qrcodeCanvas').qrcode({  //table
     			render	: "table",
-    			text	: "http://baidu.com",
+    			text	: window.location.href,
     			width:150,
     			height:150
     		});	
             console.log("asdas")
     	}else{
     		$('#qrcodeCanvas').qrcode({   //canvas
-    			text	: "http://baidu.com",
+    			text	: window.location.href,
     			width:150,
     			height:150
     		});

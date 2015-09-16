@@ -68,6 +68,7 @@
 					<input class="request-submit" type="submit">
 				</span>
 			</div>
+			<span style="color:red">请输入正确的地址</span>
 		</div>
 	</section>
 
@@ -191,8 +192,6 @@
 
 	<section id="cd-google-map">
 	    <div id="google-container" style="border:#ccc solid 1px;"></div>
-	    <!-- <div id="cd-zoom-in"></div>
-	    <div id="cd-zoom-out"></div> -->
 	</section>
 	<section class="contact" id="contact">
 		<div class="container">
@@ -243,6 +242,7 @@
 						</span>
 					</div>
 				</div>
+				<span style="color:red; float:right;padding-right:30px;">请输入正确的地址</span>
 			</div>
 		</div>
 	</section>
@@ -296,17 +296,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 		  $('.owl-carousel').owlCarousel({
-		  	// items:1,
-		  	// lazyContent:true,
-		  	// autoplay:true,
-		  	// autoplayTimeout:3000,
-		  	// autoplaySpeed:1000,
-		  	// navSpeed:1000,
-		  	// autoplayHoverPause:true,
-		  	// loop:true,
-		  	// dotsEach:true,
-		  	// dotData:true,
-		  	// nav:true,
+		  	autoPlay        : 3000,
 		  	navigationText:["<",">"],
 		  	// slideBy:true
 		  	navigation      : true,
