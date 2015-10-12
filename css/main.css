@@ -42,7 +42,7 @@ nav{
 	margin-top: 23px;
 }
 .green-back{
-	background-color: #63B8BD;
+	background-color: #44abb1;
 	position: relative;
 	color: #fff;
 }
@@ -139,6 +139,7 @@ h2{
 }
 .develop h2{
 	margin-top: 0;
+	margin-bottom: 50px;
 }
 .green-back .char-icon{
 	color:#333;
@@ -264,8 +265,8 @@ h2{
 	color: rgb(154, 167, 175);
 }
 .develop{
-	padding-top: 190px;
-	padding-bottom: 36px;
+	padding-top: 300px;
+	padding-bottom: 170px;
 	margin-top: -190px;
 }
 .develop:before{
@@ -840,4 +841,22 @@ footer{
 }
 .change-page:hover .rotate135{
 	background-color: #63B8BD;
+}
+
+
+
+.warm-error{
+	color: #F03232;
+}
+.contact .warm-error{
+	display: block;
+	margin-top: -15px;
+	margin-bottom: 10px;
+}
+@media (max-width: 768px){
+	.title-back .warm-error{
+		display: block;
+		text-align: center;
+	}
+
 }
